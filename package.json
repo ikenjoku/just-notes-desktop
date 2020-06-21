@@ -1,0 +1,44 @@
+{
+  "name": "just-notes-desktop",
+  "version": "1.0.0",
+  "description": "JustNotes desktop application",
+  "main": "src/index.js",
+  "build": {
+    "appId": "me.ikenjoku.just-notes",
+    "productName": "JustNotes",
+    "directories": {
+      "buildResources": "resources"
+    }
+  },
+  "scripts": {
+    "start": "electron src/index.js",
+    "final": "electron final/index.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikenjoku/just-notes-desktop.git"
+  },
+  "keywords": [
+    "Electron",
+    "App"
+  ],
+  "author": "Ikechukwu Njoku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ikenjoku/just-notes-desktop/issues"
+  },
+  "homepage": "https://github.com/ikenjoku/just-notes-desktop#readme",
+  "devDependencies": {
+    "electron": "6.0.0",
+    "electron-builder": "21.2.0",
+    "eslint": "6.1.0",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "prettier": "1.18.2"
+  },
+  "dependencies": {
+    "electron-util": "0.12.1"
+  }
+}
